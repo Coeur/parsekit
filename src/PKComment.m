@@ -18,7 +18,7 @@
 @implementation PKComment
 
 + (PKComment *)comment {
-    return [[[self alloc] initWithString:nil] autorelease];
+    return [[(PKComment *)[self alloc] initWithString:nil] autorelease];
 }
 
 
