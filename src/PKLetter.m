@@ -18,7 +18,7 @@
 @implementation PKLetter
 
 + (PKLetter *)letter {
-    return [[[self alloc] initWithString:nil] autorelease];
+    return [[(PKLetter *)[self alloc] initWithString:nil] autorelease];
 }
 
 

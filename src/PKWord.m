@@ -18,7 +18,7 @@
 @implementation PKWord
 
 + (PKWord *)word {
-    return [[[self alloc] initWithString:nil] autorelease];
+    return [[(PKWord *)[self alloc] initWithString:nil] autorelease];
 }
 
 
