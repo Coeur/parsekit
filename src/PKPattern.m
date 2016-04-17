@@ -13,6 +13,7 @@
 //  limitations under the License.
 
 #import <ParseKit/PKPattern.h>
+#define RKL_PREPEND_TO_METHODS PK
 #import "RegexKitLite.h"
 
 @implementation PKPattern
@@ -45,7 +46,7 @@
 
     NSRange r = NSMakeRange(0, [tok.stringValue length]);
 
-    return NSEqualRanges(r, [tok.stringValue rangeOfRegex:self.string options:(uint32_t)options inRange:r capture:0 error:nil]);
+    return NSEqualRanges(r, [tok.stringValue PKrangeOfRegex:self.string options:(uint32_t)options inRange:r capture:0 error:nil]);
 }
 
 @end

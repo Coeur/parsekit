@@ -33,7 +33,7 @@
 
 
 + (PKDelimitedString *)delimitedStringWithStartMarker:(NSString *)start endMarker:(NSString *)end {
-    PKDelimitedString *ds = [[[self alloc] initWithString:nil] autorelease];
+    PKDelimitedString *ds = [[(PKDelimitedString *)[self alloc] initWithString:nil] autorelease];
     ds.startMarker = start;
     ds.endMarker = end;
     return ds;

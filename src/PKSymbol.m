@@ -22,7 +22,7 @@
 @implementation PKSymbol
 
 + (PKSymbol *)symbol {
-    return [[[self alloc] initWithString:nil] autorelease];
+    return [[(PKSymbol *)[self alloc] initWithString:nil] autorelease];
 }
 
 
